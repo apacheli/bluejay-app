@@ -1,0 +1,16 @@
+{
+    "scripts": {
+        "check": "bunx @biomejs/biome check --write",
+        "format": "bunx @biomejs/biome format --write",
+        "lint": "bunx @biomejs/biome lint --write",
+        "dle": "BUILD_MODE=build bun src/main.tsx",
+        "serve": "BUILD_MODE=serve bun --hot src/main.tsx"
+    },
+    "dependencies": {
+        "bluejay": "https://github.com/apacheli/bluejay"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "^1.8.3",
+        "@types/bun": "^1.1.6"
+    }
+}

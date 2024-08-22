@@ -1,0 +1,47 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+:root {
+    --blacken: #0000001a;
+    --whiten: #ffffff0d;
+    --theme-background: #333d46;
+    --theme-secondary: #272c33;
+    --theme-text: #ffffff;
+}
+
+body {
+    background-color: var(--theme-background);
+    color: var(--theme-text);
+    font-family: "Segoe UI", sans-serif;
+    line-height: 2;
+    margin: 0;
+}
+
+.content {
+    margin: 4rem auto;
+    min-height: calc(100vh - 12rem);
+    padding: 0 1rem;
+    width: min(25% + 25rem, 100%);
+}
+
+.content h1,
+.content h2 {
+    border-bottom: .0625rem solid var(--whiten);
+    margin: 1rem 0;
+}
+
+.content pre,
+.content code:not(pre code) {
+    background-color: var(--theme-secondary);
+    border-radius: .25rem;
+    font-size: 1rem;
+    overflow: auto;
+    padding: .25rem;
+}
