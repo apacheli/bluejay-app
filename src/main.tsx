@@ -4,7 +4,7 @@ import Page, { type PageProps } from "@components/Page";
 
 start<PageProps>({
     assets: "src/assets",
-    dir: process.cwd(),
+    dir: Bun.cwd,
     dist: "dist",
     mode: Bun.env.BUILD_MODE as "build" | "serve",
     pages: "src/pages",

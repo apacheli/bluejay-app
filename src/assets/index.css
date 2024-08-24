@@ -11,9 +11,9 @@ html {
 :root {
     --blacken: #0000001a;
     --whiten: #ffffff0d;
-    --theme-background: #333d46;
-    --theme-secondary: #272c33;
-    --theme-text: #ffffff;
+    --theme-background: #eff4f8;
+    --theme-secondary: #ffffff;
+    --theme-text: #14161a;
 }
 
 body {
@@ -33,15 +33,15 @@ body {
 
 .content h1,
 .content h2 {
-    border-bottom: .0625rem solid var(--whiten);
+    border-bottom: 0.0625rem solid var(--whiten);
     margin: 1rem 0;
 }
 
 .content pre,
 .content code:not(pre code) {
     background-color: var(--theme-secondary);
-    border-radius: .25rem;
+    border-radius: 0.25rem;
     font-size: 1rem;
     overflow: auto;
-    padding: .25rem;
+    padding: 0.25rem;
 }
