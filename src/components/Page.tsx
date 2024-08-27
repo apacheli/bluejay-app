@@ -1,3 +1,4 @@
+import { BLUEJAY_DEV } from "bluejay";
 import type { JSX } from "preact";
 
 export interface PageProps {
@@ -19,6 +20,7 @@ export default ({ title, description, children }: PageProps) => (
         </head>
         <body>
             <main class="content">{children}</main>
+            <BLUEJAY_DEV />
         </body>
     </>
 );

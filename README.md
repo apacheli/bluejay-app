@@ -6,12 +6,12 @@ This template serves to build bluejay apps easily.
 
 Serve development files:
 
-```sh
+```
 $ bun serve
 ```
 
 Build to dist:
 
-```sh
+```
 $ bun dle
 ```

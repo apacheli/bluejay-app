@@ -9,8 +9,8 @@ html {
 }
 
 :root {
-    --blacken: #0000001a;
-    --whiten: #ffffff0d;
+    --blacken: #ffffff70;
+    --whiten: #0000000d;
     --theme-background: #eff4f8;
     --theme-secondary: #ffffff;
     --theme-text: #14161a;
@@ -42,6 +42,11 @@ body {
     background-color: var(--theme-secondary);
     border-radius: 0.25rem;
     font-size: 1rem;
+    line-height: 1.5;
     overflow: auto;
-    padding: 0.25rem;
+    padding: 0.5rem;
+}
+
+.content pre {
+    padding: 1rem;
 }
