@@ -1,5 +1,12 @@
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+}
+
+::selection {
+    background-color: var(--theme);
+    color: #ffffff;
 }
 
 *,
@@ -8,20 +15,52 @@ html {
     box-sizing: inherit;
 }
 
-:root {
-    --blacken: #ffffff70;
-    --whiten: #0000000d;
-    --theme-background: #eff4f8;
-    --theme-secondary: #ffffff;
-    --theme-text: #14161a;
-}
-
 body {
     background-color: var(--theme-background);
     color: var(--theme-text);
     font-family: "Segoe UI", sans-serif;
+    font-size: 1rem;
     line-height: 2;
     margin: 0;
+}
+
+:root {
+    --time: 0.25s;
+    --blacken: #0000001a;
+    --whiten: #ffffff0d;
+    --middle: #ffffff40;
+    --theme: #35d5f1;
+    --theme-background: #2a303b;
+    --theme-header: #3c4650f0;
+    --theme-text: #ffffff;
+    --hljs-0: #5c6370;
+    --hljs-1: #c678dd;
+    --hljs-2: #e06c75;
+    --hljs-3: #56b6c2;
+    --hljs-4: #98c379;
+    --hljs-5: #d19a66;
+    --hljs-6: #61aeee;
+    --hljs-7: #e6c07b;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --blacken: #ffffff70;
+        --whiten: #0000000d;
+        --middle: #00000040;
+        --theme: #3290e6;
+        --theme-background: #eceff1;
+        --theme-header: #fffffff0;
+        --theme-text: #14161a;
+        --hljs-0: #a0a1a7;
+        --hljs-1: #a626a4;
+        --hljs-2: #e45649;
+        --hljs-3: #0184bb;
+        --hljs-4: #50a14f;
+        --hljs-5: #986801;
+        --hljs-6: #4078f2;
+        --hljs-7: #c18401;
+    }
 }
 
 .content {
@@ -31,22 +70,185 @@ body {
     width: min(25% + 25rem, 100%);
 }
 
-.content h1,
-.content h2 {
+.content a {
+    color: var(--theme);
+    text-decoration: none;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+h1,
+h2 {
     border-bottom: 0.0625rem solid var(--whiten);
+}
+
+h1,
+h2,
+h3 {
     margin: 1rem 0;
+}
+
+.content h1 a,
+.content h2 a,
+.content h3 a {
+    color: inherit;
 }
 
 .content pre,
 .content code:not(pre code) {
-    background-color: var(--theme-secondary);
-    border-radius: 0.25rem;
-    font-size: 1rem;
+    background-color: var(--theme-header);
+    border-radius: 0.5rem;
     line-height: 1.5;
     overflow: auto;
-    padding: 0.5rem;
+    padding: 0.25rem;
 }
 
 .content pre {
     padding: 1rem;
+}
+
+blockquote {
+    flex-direction: column;
+    background-color: var(--blacken);
+    border-radius: 0 0.5rem 0.5rem 0;
+    border-left: 0.25rem solid var(--theme-header);
+    margin: 1rem 0;
+    overflow: auto;
+    padding-left: 1rem;
+}
+
+.hljs-comment,
+.hljs-quote {
+    color: var(--hljs-0);
+    font-style: italic;
+}
+
+.hljs-doctag,
+.hljs-keyword,
+.hljs-formula {
+    color: var(--hljs-1);
+}
+
+.hljs-section,
+.hljs-name,
+.hljs-selector-tag,
+.hljs-deletion,
+.hljs-subst {
+    color: var(--hljs-2);
+}
+
+.hljs-literal {
+    color: var(--hljs-3);
+}
+
+.hljs-string,
+.hljs-regexp,
+.hljs-addition,
+.hljs-attribute,
+.hljs-meta .hljs-string {
+    color: var(--hljs-4);
+}
+
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-type,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-number {
+    color: var(--hljs-5);
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-selector-id,
+.hljs-title {
+    color: var(--hljs-6);
+}
+
+.hljs-built_in,
+.hljs-title.class_,
+.hljs-class .hljs-title {
+    color: var(--hljs-7);
+}
+
+.hljs-emphasis {
+    font-style: italic;
+}
+
+.hljs-strong {
+    font-weight: bold;
+}
+
+.hljs-link {
+    text-decoration: underline;
+}
+
+.alerts-icon {
+    padding: 0.25rem;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.alerts-text {
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+    gap: 0.25rem;
+    margin: 1rem 0;
+}
+
+.alert-note {
+    background-color: #3289da1a;
+    border-color: #3289da;
+    fill: #41b2df;
+}
+
+.alert-note-text {
+    color: #41b2df;
+}
+
+.alert-tip {
+    background-color: #3fc2251a;
+    border-color: #3fc225;
+    fill: #3fd163;
+}
+
+.alert-tip-text {
+    color: #3fd163;
+}
+
+.alert-important {
+    background-color: #6c41d11a;
+    border-color: #6c41d1;
+    fill: #a666e2;
+}
+
+.alert-important-text {
+    color: #a666e2;
+}
+
+.alert-warning {
+    background-color: #ecc4431a;
+    border-color: #ecc443;
+    fill: #dbce54;
+}
+
+.alert-warning-text {
+    color: #dbce54;
+}
+
+.alert-caution {
+    background-color: #e739331a;
+    border-color: #e73933;
+    fill: #e05330;
+}
+
+.alert-caution-text {
+    color: #e05330;
 }

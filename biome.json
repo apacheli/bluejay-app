@@ -6,11 +6,6 @@
         "lineWidth": 320
     },
     "linter": {
-        "enabled": true,
-        "rules": {
-            "correctness": {
-                "useJsxKeyInIterable": "off"
-            }
-        }
+        "enabled": true
     }
 }

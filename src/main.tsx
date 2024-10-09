@@ -6,9 +6,7 @@ start<PageProps>({
     assets: "src/assets",
     dir: Bun.cwd,
     dist: "dist",
-    mode: Bun.env.BUILD_MODE as "build" | "serve",
     pages: "src/pages",
-    path: "",
     render: (page) => {
         return (
             <Page {...page.mod}>

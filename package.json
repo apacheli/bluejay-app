@@ -1,10 +1,11 @@
 {
     "scripts": {
+        "clean": "rm -rf .bluejay node_modules bun.lockb",
         "check": "bunx @biomejs/biome check --write",
         "format": "bunx @biomejs/biome format --write",
         "lint": "bunx @biomejs/biome lint --write",
-        "dle": "BUILD_MODE=build bun src/main.tsx",
-        "serve": "BUILD_MODE=serve bun --hot src/main.tsx"
+        "dle": "BLUEJAY_PATH= BLUEJAY_MODE=build bun src/main.tsx",
+        "serve": "BLUEJAY_PATH= BLUEJAY_MODE=serve bun --hot src/main.tsx"
     },
     "dependencies": {
         "bluejay": "https://github.com/apacheli/bluejay"
