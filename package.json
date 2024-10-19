@@ -4,8 +4,8 @@
         "check": "bunx @biomejs/biome check --write",
         "format": "bunx @biomejs/biome format --write",
         "lint": "bunx @biomejs/biome lint --write",
-        "dle": "BLUEJAY_PATH= BLUEJAY_MODE=build bun src/main.tsx",
-        "serve": "BLUEJAY_PATH= BLUEJAY_MODE=serve bun --hot src/main.tsx"
+        "dle": "BLUEJAY_MODE=build bun src/main.tsx",
+        "serve": "BLUEJAY_MODE=serve bun --hot src/main.tsx"
     },
     "dependencies": {
         "bluejay": "https://github.com/apacheli/bluejay"
