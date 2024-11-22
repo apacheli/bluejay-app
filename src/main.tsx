@@ -1,4 +1,5 @@
 import { start } from "bluejay";
+import renderToString from "preact-render-to-string";
 
 import Page, { type PageProps } from "@components/Page";
 
@@ -8,7 +9,7 @@ start<PageProps>({
     dist: "dist",
     pages: "src/pages",
     render: (page) => {
-        return (
+        return renderToString(
             <Page {...page.mod}>
                 <page.mod.default />
             </Page>

@@ -8,7 +8,12 @@
         "serve": "BLUEJAY_MODE=serve bun --hot src/main.tsx"
     },
     "dependencies": {
-        "bluejay": "https://github.com/apacheli/bluejay"
+        "@mdx-js/mdx": "^3.1.0",
+        "bluejay": "https://github.com/apacheli/bluejay",
+        "preact": "^10.25.0",
+        "preact-render-to-string": "^6.5.11",
+        "remark-gemoji": "^8.0.0",
+        "remark-gfm": "^4.0.0"
     },
     "devDependencies": {
         "@biomejs/biome": "^1.8.3",
