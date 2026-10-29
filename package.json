@@ -1,25 +1,13 @@
 {
-    "scripts": {
-        "clean": "rm -rf .bluejay node_modules bun.lockb",
-        "check": "bunx @biomejs/biome check --write",
-        "format": "bunx @biomejs/biome format --write",
-        "lint": "bunx @biomejs/biome lint --write",
-        "dle": "BLUEJAY_MODE=build bun src/main.tsx",
-        "serve": "BLUEJAY_MODE=serve bun --hot src/main.tsx"
-    },
-    "dependencies": {
-        "@mdx-js/mdx": "^3.1.0",
-        "bluejay": "https://github.com/apacheli/bluejay",
-        "preact": "^10.25.0",
-        "preact-render-to-string": "^6.5.11",
-        "remark-gemoji": "^8.0.0",
-        "remark-gfm": "^4.0.0"
-    },
-    "devDependencies": {
-        "@biomejs/biome": "^1.8.3",
-        "@types/bun": "^1.1.6"
-    },
-    "peerDependencies": {
-        "typescript": "^5.0.0"
-    }
+  "scripts": {
+    "build": "BLUEJAY_MODE=build bunx bluejay src/main.js",
+    "serve": "BLUEJAY_MODE=serve NODE_ENV=development bunx bluejay src/main.js",
+    "serve:production": "BLUEJAY_MODE=serve NODE_ENV=development bunx bluejay src/main.js"
+  },
+  "dependencies": {
+    "bluejay": "https://github.com/apacheli/bluejay"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.4"
+  }
 }

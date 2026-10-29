@@ -1,1 +1,3 @@
-preload = ["bluejay/mdx"]
+[fmt]
+printWidth = 120
+sortPackageJson = true
