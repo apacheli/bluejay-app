@@ -1,6 +1,6 @@
-# Bluejay App Template
+# bluejay App Template
 
-This project was created with [the Bluejay App template](https://github.com/apacheli/bluejay-app) and [`$ bun create`](https://bun.sh/docs/cli/bun-create).
+This project was created with [the bluejay App template](https://github.com/apacheli/bluejay-app) and [`$ bun create`](https://bun.sh/docs/cli/bun-create).
 
 ## Getting Started
 
