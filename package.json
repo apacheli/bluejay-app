@@ -1,6 +1,9 @@
 {
   "scripts": {
     "build": "BLUEJAY_MODE=build bunx bluejay src/main.js",
+    "clean": "rm -rf ./dist",
+    "dev": "bun run serve",
+    "dle": "bun run build",
     "serve": "BLUEJAY_MODE=serve NODE_ENV=development bunx bluejay src/main.js",
     "serve:production": "BLUEJAY_MODE=serve NODE_ENV=development bunx bluejay src/main.js"
   },

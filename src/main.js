@@ -9,8 +9,8 @@ import markdown from "bluejay/lib/plugins/markdown.js";
 
 import Page from "./layouts/page.jsx";
 
-const dist = join(Bun.cwd, "./dist");
 const dev = Bun.env.NODE_ENV === "development";
+const dist = join(Bun.cwd, "./dist");
 const mode = Bun.env.BLUEJAY_MODE;
 const port = dev ? 1337 : 80;
 
@@ -25,6 +25,8 @@ export default {
     "/assets": ["./assets"],
   },
   plugins: [
+    console.clear,
+    () => console.time(`bluejay ${mode}`),
     extension({
       ".html": /\.(?:md|[jt]sx)$/i,
       ".js": /\.[jt]s$/i,
@@ -50,5 +52,6 @@ export default {
         }
       }
     },
+    () => console.timeEnd(`bluejay ${mode}`),
   ],
 };
