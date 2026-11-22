@@ -11,6 +11,6 @@
     "bluejay": "https://github.com/apacheli/bluejay"
   },
   "devDependencies": {
-    "@types/bun": "^1.4.4"
+    "@types/bun": "^1.4.5"
   }
 }

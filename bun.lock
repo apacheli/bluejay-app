@@ -7,20 +7,20 @@
         "bluejay": "https://github.com/apacheli/bluejay",
       },
       "devDependencies": {
-        "@types/bun": "^1.4.4",
+        "@types/bun": "^1.4.5",
       },
     },
   },
   "packages": {
     "@apacheli/jsx": ["@apacheli/jsx@github:apacheli/jsx#12f09ce", {}, "apacheli-jsx-12f09ce", "sha512-nEfKjnEn0xigQRnlhoiUODlUPbwGNmcWw+sH4UeuNqz/vBuMVdRP6qeay+oxPPUNqeaoYjgAwcI3XA2YxgY4Qg=="],
 
-    "@types/bun": ["@types/bun@1.4.4", "", { "dependencies": { "bun-types": "1.4.4" } }, "sha512-9wkRDXUXK124pEnAutE6n/l18j+i9GC5IAHK8TmX/2nlySETmky0OU6yL5U8pW1AoKh++AN9auDCr647BfurjQ=="],
+    "@types/bun": ["@types/bun@1.4.5", "", { "dependencies": { "bun-types": "1.4.5" } }, "sha512-DpgwNI9z0L1S0gtb45QLCWgwCUcMLnsHYMJHQvpNj7erGiCGBvpggltAIeARrtobNMKMuy0UP7i56tKKgwFs/Q=="],
 
     "@types/node": ["@types/node@26.6.6", "", { "dependencies": { "undici-types": "~8.9.0" } }, "sha512-MzQj+8Kx3XI40OmUAE6Qoh58ZMNstNNMwn2nfd3qWsfe7nDNSqJNzes4njhz6AHwrSHOffSLwXU6yb474Q4aog=="],
 
-    "bluejay": ["bluejay@github:apacheli/bluejay#a03ae2b", { "peerDependencies": { "@apacheli/jsx": "https://github.com/apacheli/jsx", "lightningcss": "^1.33.0" }, "bin": "./lib/bin.js" }, "apacheli-bluejay-a03ae2b", "sha512-+UqTpOwUJ5UkbhBxFugEgdnMyGBjqVfBqM4IEu06ugGISounad78aaPt7v9ZcF9bF/J8mLPenuTkHb+tzRn+0Q=="],
+    "bluejay": ["bluejay@github:apacheli/bluejay#52f2257", { "peerDependencies": { "@apacheli/jsx": "https://github.com/apacheli/jsx", "lightningcss": "^1.33.0" }, "bin": "./lib/bin.js" }, "apacheli-bluejay-52f2257", "sha512-O+dmlcqegu/wW2J04qvh6ZE+Q3gG0cW0QsaIM572koMETkCL0pFbDkEfYWWYVH/QWDXfj35mtXLEYq+RKs8kYw=="],
 
-    "bun-types": ["bun-types@1.4.4", "", { "dependencies": { "@types/node": "*", "undici-types": "*" } }, "sha512-yjrJh5oGX7mMPKGd19YXyIjmEuj4G4zNC30bs7PM9Az7NQ3ndF3j6hbeRdvJTRQEhJ/FYQwW0a2moweEi2hMxQ=="],
+    "bun-types": ["bun-types@1.4.5", "", { "dependencies": { "@types/node": "*", "undici-types": "*" } }, "sha512-ECHn+9dhL3wv0G6u0+7dQvrnaimXiRDxxerYBmhTaLyJEEuvTPWk2Fye3XIf5Y++JIIiHKfQw4Z7V5D8KuiXbg=="],
 
     "detect-libc": ["detect-libc@2.1.2", "", {}, "sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ=="],
 
